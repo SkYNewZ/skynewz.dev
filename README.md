@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f14eaf9e-3185-4800-b4d6-619d67c5271b/deploy-status)](https://app.netlify.com/sites/skynewz/deploys)
+
+
 # Get started building your personal website
 
 ### Showcase your software development skills

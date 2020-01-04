@@ -1,6 +1,0 @@
-[build]
-  publish = "_site/"
-  command = "jekyll build"
-
-[context.production.environment]
-  URL           = "https://skynewz.dev"

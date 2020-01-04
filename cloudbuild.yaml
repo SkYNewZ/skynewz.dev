@@ -1,0 +1,16 @@
+# In this directory, run the following command to build this builder.
+# $ gcloud builds submit . --config=cloudbuild.yaml
+
+steps:
+  - name: jekyll/jekyll
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        chown -R jekyll:jekyll .
+        touch Gemfile.lock
+        chmod a+w Gemfile.lock
+        jekyll build
+
+  - name: gcr.io/cloud-builders/gcloud-slim
+    args: ["app", "deploy", "app.yaml"]

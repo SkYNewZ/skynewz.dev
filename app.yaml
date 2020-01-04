@@ -1,0 +1,10 @@
+runtime: python37
+service: default
+
+handlers:
+  - url: /
+    static_files: _site/index.html
+    upload: _site/*
+
+  - url: /
+    static_dir: _site/

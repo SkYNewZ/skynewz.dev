@@ -3,13 +3,8 @@ service: default
 
 handlers:
   - url: /
-    static_files: _site/index.html
-    upload: _site/index.html
+    static_files: index.html
+    upload: index.html
 
-  - url: /(.+)/
-    static_files: _site/\1/index.html
-    upload: _site/(.+)/index.html
-
-  - url: /*
-    static_files: _site/\1
-    upload: _site/*
+  - url: /assets
+    static_dir: assets

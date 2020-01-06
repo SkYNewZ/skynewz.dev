@@ -13,4 +13,5 @@ steps:
         jekyll build
 
   - name: gcr.io/cloud-builders/gcloud-slim
+    dir: "_site"
     args: ["app", "deploy", "app.yaml"]
